@@ -6,6 +6,34 @@ In this initial version of the decentralized file sharing network's API, we prov
 
 ---
 
+## Authentication
+
+In this version, we support various authentication methods to ensure secure access to the File Transfer API:
+
+### Basic Authentication
+
+This method uses a username and password encoded in Base64. It should only be used over HTTPS to prevent interception by third parties.
+
+```bash
+curl -X POST "https://*tbd.com/upload" \
+     -H "Authorization: Basic <base64-encoded-username:password>" \
+     -F "file=@/path/to/file"
+```
+
+### Bearer Token
+
+For token-based authentication, typically using JWTs:
+
+```bash
+curl -X POST "https://*tbd.com/upload" \
+     -H "Authorization: Bearer <your-access-token>" \
+     -F "file=@/path/to/file"
+```
+
+There are multiple libraries in Node.js that can be used to generate and verify tokens.
+
+---
+
 ## Uploading Content
 
 ### Endpoint
