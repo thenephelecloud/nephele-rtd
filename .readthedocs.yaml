@@ -14,8 +14,3 @@ build:
 # Declare the MkDocs configuration file
 mkdocs:
   configuration: mkdocs.yml  # Path to the MkDocs configuration file
-
-# Optionally declare the Python requirements required to build your docs
-# List any dependencies needed for building your documentation
-python:
- 
