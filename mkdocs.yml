@@ -1,0 +1,8 @@
+site_name: Nephele Documentation
+nav:
+    - Home: index.md
+    - File Transfer API: file-transfer-api.md
+    - EVM Interaction: evm-interaction.md
+    - Exploring Blobs: exploring-blobs.md
+    - Verifying Proofs: verifying-proofs.md
+theme: readthedocs
